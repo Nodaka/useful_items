@@ -1,40 +1,38 @@
-\documentclass{article}
+\documentclass{jarticle}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{mathtools}
-\title{サンプルレポート}
-\author{あなたの名前}
-\date{\today}
+%\usepackage{indentfirst}%文の最初をインデントする.
+%\setlength{\parindent}{12pt}%最初の字下げ幅を設定できる.
+\usepackage[top=25truemm,bottom=20truemm,left=50truemm,right=50truemm]{geometry}%余白の調整
+
+\title{タイトル}
+\author{名前}
+\date{日付}
 \begin{document}
 \maketitle
-\section{はじめに}
+\section{章}
+
+indentfirstを設定すると最初の1行目も字下げした状態で文章が始まり, 日本の形式にあった表現になる.
+
+2行目は以降は自動的に字下げされるが, これは段落改行という行と行の間に空白行を挿入することによる改行の場合は適応される.\\
+なので, バックスラッシュを2連でつなげた強制開業の場合は字下げが起こらないので注意が必要.
+
 \begin{enumerate}
-  \item 半導体業界内で自由に転職できる実力あるエンジニア
+  \item 箇条書き1
   \begin{enumerate}
-    \item 外資系企業に就職できる十分な英語力
+    \item 箇条書き1-1
     \begin{enumerate}
-      \item TOEIC 860
-      \item 英会話
+      \item 箇条書き1-1-1
+      \item 箇条書き1-1-2
     \end{enumerate}
-    \item 半導体業界における十分な知見
-    \begin{enumerate}
-      \item 業界の本を読む
-      \item 技術雑誌を読む
-    \end{enumerate}
-    \item 汎用的な技術知見
-    \begin{enumerate}
-      \item プログラミング
-      \item 統計学の知見
-      \item 物理知識
-      \item 数学知識
-      \item 研究知見
-    \end{enumerate}
+    \item 箇条書き1-2
   \end{enumerate}
+  \item 箇条書き2
 \end{enumerate}
-\section{内容}
-は文章やレポートの作成に便利です。数式も簡単に挿入できます。
-\subsection{数式の例}
-以下は二次方程式の解の公式です。どうでしょうか．
+\subsection{節}
+\subsubsection{項}
+
 \begin{equation} \label{eq:a}
   f(x) = \sin x
 \end{equation}
@@ -45,6 +43,6 @@
   h(x) &= \tan(1/x)
 \end{align}
 
-式\eqref{eq:cos}は
+式\eqref{eq:cos}を参照する.
 \subsubsection{数式の例}
 \end{document}
